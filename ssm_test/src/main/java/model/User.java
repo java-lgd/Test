@@ -8,6 +8,14 @@ public class User {
 	public Integer getId() {
 		return id;
 	}
+	public User() {
+	
+	}
+	public User(String name, String pass) {
+		super();
+		this.name = name;
+		this.pass = pass;
+	}
 
 	public void setId(Integer id) {
 		this.id = id;

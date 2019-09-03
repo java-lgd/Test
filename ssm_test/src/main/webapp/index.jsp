@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="User/outlogin">注销</a>
+
 <style>
 .left{
 	width:15%;height: 500px;
@@ -22,9 +22,9 @@ function ok(o){
 	if(o.contentWindow.location.href.indexOf("login")>0){
 		open("login.html","_self");
 	}
-	
 }
 </script>
+<a href="User/outlogin">注销</a>
 <div class="left">
 <a href="Book/index" target="right">book</a></br>
 <a href="Type/index" target="right">type</a>

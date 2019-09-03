@@ -1,6 +1,6 @@
 package model;
 
-public class Type  implements TypeInterface{
+public class Type{
 	private int id;
 	private String name;
 	public Type() { }

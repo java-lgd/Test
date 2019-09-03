@@ -17,9 +17,10 @@
        
         <property name="filterChainDefinitions">
             <value>
-                /inlogin=anon
-                /test/**=roles[role1]
-                /index=authc
+           		/img=anon
+                /User/login=anon
+                /*/**=authc
+                /index.jsp=authc
             </value>
         </property>
     </bean>
