@@ -5,7 +5,7 @@
 <head>
 <meta charset=UTF-8">
 <script src="js/jquery-2.2.4.min.js" ></script>
-<title>Insert title here</title>
+<title>首页</title>
 </head>
 <body>
 <a href="User/outlogin">注销</a>
@@ -26,12 +26,12 @@ function ok(o){
 }
 </script>
 <div class="left">
-<a href="Book/index.action" target="right">book</a></br>
-<a href="Type/index.action" target="right">type</a>
+<a href="Book/index" target="right">book</a></br>
+<a href="Type/index" target="right">type</a>
 </div>
 
 <div class="right">
-<iframe name="right" width="300" height="300" src="Book/index.action" onload="ok(this);"></iframe>
+<iframe name="right" width="300" height="300" src="Book/index" onload="ok(this);"></iframe>
 </div>
 </body>
 </html>

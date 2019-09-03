@@ -21,7 +21,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 	}
 
 	public boolean preHandle(HttpServletRequest req, HttpServletResponse resp, Object arg2) throws Exception {
-		if(req.getRequestURI().equals("/recode/User/login")) 
+		if(req.getRequestURI().equals("/ssm_test/User/login")) 
 		return true;
 		else {
 			Object u=req.getSession().getAttribute("user");

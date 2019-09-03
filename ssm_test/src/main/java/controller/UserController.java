@@ -26,7 +26,8 @@ public class UserController {
 	public String login(User u, String code, ModelMap m, HttpSession s) {
 		String num = s.getAttribute("number").toString();
 		if (!num.equalsIgnoreCase(code)) {
-			return "redirect:/login. html";
+			System.out.println("验证码错误");
+			return "redirect:/login.html";
 		}
 		User user = service.login(u);
 		if (user != null) {
@@ -34,14 +35,15 @@ public class UserController {
 			s.setAttribute("user", user);
 			return "redirect:/index.jsp";
 		} else {
-			return "redirect:/login. html";
+			System.out.println("用户密码错误");
+			return "redirect:/login.html";
 		}
 	}
 
 	@RequestMapping("outlogin")
 	public String login(HttpSession s, HttpServletRequest req) {
 		s.removeAttribute("user");
-		return "redirect: . ./login. html";
+		return "redirect:/login.html";
 	}
 
 }

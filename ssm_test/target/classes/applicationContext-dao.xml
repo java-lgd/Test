@@ -29,7 +29,7 @@
             <value>charSet=utf-8</value>
         </property>
     </bean>
-
+ 
     <!-- sqlSessionFactory -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />

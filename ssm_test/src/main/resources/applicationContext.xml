@@ -16,13 +16,13 @@
      http://www.springframework.org/schema/cache  http://www.springframework.org/schema/cache/spring-cache.xsd">
   
   
-  <mvc:interceptors>
+<mvc:interceptors>
     <mvc:interceptor>
-    <mvc:mapping path="/**"/>
+   	 <mvc:mapping path="/**"/>
      <bean class="interceptor.LoginInterceptor"/>
     </mvc:interceptor>
 </mvc:interceptors>
-  
+   
  <!-- 注解驱动 -->  
     <mvc:annotation-driven/>
     <!-- 处理静态资源 -->

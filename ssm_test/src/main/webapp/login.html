@@ -5,15 +5,15 @@
 <title>登录页</title>
 </head>
 <body>
-<script type="text/javascript">
-    var i=0;
-    function imginit(o){
-    	o.src="img?pos="+(i++);
-    }
-</script>
-	<form action="User/login.action" method="post">
-		用户名<input type="text" name="name" ><br>
-		密    码<input type="password" name="pass" ><br>
+	<script type="text/javascript">
+		var i = 0;
+		function imginit(o) {
+			o.src = "img?pos=" + (i++);
+		}
+	</script>
+	<form action="User/login" method="post">
+		用户名<input name="name"><br> 
+		密    码<input type="password" name="pass"><br> 
 		验证码<input name="code"></input><img src="img" onclick="imginit(this)"><br>
 		<button type="submit">登录</button>
 	</form>
