@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+  
+<%@taglib prefix="s" uri="http://shiro.apache.org/tags"%>   
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +28,17 @@ function ok(o){
 </script>
 <a href="User/outlogin">注销</a>
 <div class="left">
+
+<s:hasPermission name="bbb">  
+	<a href="Book/add" target="right">权限0</a></br>
+</s:hasPermission>
+<s:hasPermission name="aaa">  
+	<a href="Book/add" target="right">权限1</a></br>
+</s:hasPermission>
+<s:hasPermission name="add">  
+	<a href="Book/add" target="right">权限2</a></br>
+</s:hasPermission>
+
 <a href="Book/index" target="right">book</a></br>
 <a href="Type/index" target="right">type</a>
 </div>
