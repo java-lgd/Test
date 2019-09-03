@@ -1,6 +1,2 @@
-/check/
 /controller/
-/dao/
-/model/
-/service/
-/service_Impl/
+/interceptor/

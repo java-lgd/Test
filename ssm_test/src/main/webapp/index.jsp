@@ -7,36 +7,31 @@
 <script src="js/jquery-2.2.4.min.js" ></script>
 <title>Insert title here</title>
 </head>
-<style>
-    .iframe_page{
-        width: 800px;
-        height: 500px;
-        position:absolute;
-        left:140px;
-        background-color: #dfdfdf;  
-    }
-    .iframe_page #framePage{
-        width: 600px;
-        height: 400px;
-        background-color: #adb9cd; 
-    }
-</style>
 <body>
-
-
-	<ul>
-		<li>
-			<a href="Book/index.action" target="test">Book</a>
-		</li>
-		<li >
-			<a href="Type/index.action" target="test">Type</a>
-		</li>
-	</ul>
+<a href="User/outlogin">注销</a>
+<style>
+.left{
+	width:15%;height: 500px;
+}
+.right{
+width:85%;height: 500px;position: absolute;left: 15%;top:0;
+}
+</style>
+<script type="text/javascript">
+function ok(o){
+	if(o.contentWindow.location.href.indexOf("login")>0){
+		open("login.html","_self");
+	}
 	
-    <div class="iframe_page">
-        <iframe id="framePage" src="Book/index.action" name="test"></iframe>
-    </div>
+}
+</script>
+<div class="left">
+<a href="Book/index.action" target="right">book</a></br>
+<a href="Type/index.action" target="right">type</a>
+</div>
 
-
+<div class="right">
+<iframe name="right" width="300" height="300" src="Book/index.action" onload="ok(this);"></iframe>
+</div>
 </body>
 </html>
