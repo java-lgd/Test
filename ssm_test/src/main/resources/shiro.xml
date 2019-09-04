@@ -26,7 +26,6 @@
 		</property>
 	</bean>
     
-    
     <bean id="shiroFilter"  class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager"  ref="securityManager"></property>
         <property name="loginUrl"  value="/login.html"></property>

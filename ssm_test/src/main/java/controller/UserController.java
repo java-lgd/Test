@@ -32,7 +32,7 @@ public class UserController {
 			return "redirect:/login.html";
 		}
 		try {
-			SecurityUtils.getSubject().getSession().setTimeout(10);
+//			SecurityUtils.getSubject().getSession().setTimeout(10000);
 			SecurityUtils.getSubject().login(new UsernamePasswordToken(u.getName(),u.getPass()));
 		}catch (Exception e) {
 			System.out.println("”√ªß¥ÌŒÛ");

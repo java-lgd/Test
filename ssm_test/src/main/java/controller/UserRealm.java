@@ -42,9 +42,9 @@ public class UserRealm extends AuthorizingRealm
         permissions.add("add");
         permissions.add("delete");
         sainfo.setRoles(roles);
-         sainfo.setStringPermissions(permissions);
+        sainfo.setStringPermissions(permissions);
         return sainfo;
-    }
+    } 
     @Override
     protected AuthenticationInfo  doGetAuthenticationInfo(AuthenticationToken  arg0)
         throws AuthenticationException

@@ -34,7 +34,7 @@ public class BookController {
 		return "Book/index";
 	}
 	
-	@RequiresPermissions("aaa")
+//	@RequiresPermissions("aaa")
 	@RequestMapping("add")
 	public String add(ModelMap m) {
 		m.put("typelist", tservice.select(""));

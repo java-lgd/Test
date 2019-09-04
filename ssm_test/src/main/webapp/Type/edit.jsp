@@ -10,10 +10,10 @@
 <body>
 	
 		<c:if test="${info==null }">
-			<form action="insert.action" method="post">
+			<form action="insert" method="post">
 		</c:if>
 		<c:if test="${info!=null }">
-			<form action="update.action" method="post">
+			<form action="update" method="post">
 			<input name="id"  type="hidden" value="${info.id }">
 		</c:if>
 		<input name="name" value="${info.name}"> 

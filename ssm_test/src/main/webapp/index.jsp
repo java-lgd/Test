@@ -32,11 +32,8 @@ function ok(o){
 <s:hasPermission name="bbb">  
 	<a href="Book/add" target="right">权限0</a></br>
 </s:hasPermission>
-<s:hasPermission name="aaa">  
-	<a href="Book/add" target="right">权限1</a></br>
-</s:hasPermission>
 <s:hasPermission name="add">  
-	<a href="Book/add" target="right">权限2</a></br>
+	<a href="Book/index" target="right">权限2</a></br>
 </s:hasPermission>
 
 <a href="Book/index" target="right">book</a></br>

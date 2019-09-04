@@ -9,18 +9,18 @@
 <script type="text/javascript">
 	function del(id) {
 		if(confirm("是否删除？")){
-			open("delete.action?id="+id,"_self");
+			open("delete?id="+id,"_self");
 		}
 	}
 </script>
 </head>
 <body>
-	<form action="index.action" method="post">
+	<form action="index" method="post">
 		<input name="txt">
 		<input type="submit" value="查询">
 	</form>
 	
-	<a href="add.action">新增</a>
+	<a href="add">新增</a>
 	<table>
 		<tr>
 			<td>编号</td>
@@ -37,7 +37,7 @@
 				<td>${list.sexname }</td>
 				<td>${list.typename }</td>
 				<td><a href="javascript:del(${list.id })">删除</a>
-				<a href="edit.action?id=${list.id }">修改</a></td>
+				<a href="edit?id=${list.id }">修改</a></td>
 			</tr>
 		</c:forEach>
 		
