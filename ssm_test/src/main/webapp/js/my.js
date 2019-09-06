@@ -36,27 +36,14 @@ function fresh(id){
 }
 
 
-function getlist(url,selector,def_id){
-		$.post(url, function(json) {
-			var s=$(selector).empty();
-			s.append($("<option value=''></option>"))
-			for(var i=0;i<json.length;i++){
-				var ss="";
-				if(json[i].id==def_id) ss="selected='selected'";
-				s.append($("<option value='"+json[i].id+"' "+ss+" >"+json[i].name+"</option>"))
-			}
-			layui.form.render('select');
-		},"json");
-}
-
-function getarray(url,selector,def_index){
-	$.post(url, function(json) {
+function getlist(url,data,selector,def_id){
+	$.post(url,data,function(json) {
 		var s=$(selector).empty();
 		s.append($("<option value=''></option>"))
 		for(var i=0;i<json.length;i++){
 			var ss="";
-			if(i==def_index) ss="selected='selected'";
-			s.append($("<option value='"+i+"' "+ss+" >"+json[i]+"</option>"))
+			if((json[i].provinceID)==def_id) ss="selected='selected'";
+			s.append($("<option value='"+json[i].provinceID+"' "+ss+" >"+json[i].province+"</option>"))
 		}
 		layui.form.render('select');
 	},"json");
